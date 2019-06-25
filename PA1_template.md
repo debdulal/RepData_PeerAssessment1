@@ -119,7 +119,24 @@ hist(steps_day$total_steps, col = steps_day$date,main="Total Steps Per Day", xla
 
 ![](PA1_template_files/figure-html/unnamed-chunk-3-1.png)<!-- -->
   
+## mean
 
+```r
+mean(steps_day$total_steps)
+```
+
+```
+## [1] NA
+```
+## median
+
+```r
+median(steps_day$total_steps)
+```
+
+```
+## [1] NA
+```
 
 ## What is the average daily activity pattern?
 
@@ -137,7 +154,7 @@ qplot(interval, steps, data = avg_steps_interval,geom=c("line")) + geom_smooth()
 ## `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-6-1.png)<!-- -->
 
 
 2: Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
@@ -235,7 +252,29 @@ head(steps_day_1)
 hist(steps_day_1$total_steps, col = steps_day_1$date,main="Total Steps Per Day Imputed", xlab="Total Steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
+
+
+## mean
+
+```r
+mean(steps_day_1$total_steps)
+```
+
+```
+## [1] 9354.23
+```
+## median
+
+```r
+median(steps_day_1$total_steps)
+```
+
+```
+## [1] 10395
+```
+
+
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
@@ -254,5 +293,5 @@ qplot(interval, steps, data = avg_imputed_steps_interval,
       labs(x="Interval",y="Number of steps")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
 © 2019 GitHub, Inc.

@@ -53,7 +53,14 @@ library(ggplot2)
 hist(steps_day$total_steps, col = steps_day$date,main="Total Steps Per Day", xlab="Total Steps")
 ```
   
-
+## mean
+```{r}
+mean(steps_day$total_steps)
+```
+## median
+```{r}
+median(steps_day$total_steps)
+```
 
 ## What is the average daily activity pattern?
 
@@ -123,6 +130,18 @@ head(steps_day_1)
 
 hist(steps_day_1$total_steps, col = steps_day_1$date,main="Total Steps Per Day Imputed", xlab="Total Steps")
 ```
+
+
+## mean
+```{r}
+mean(steps_day_1$total_steps)
+```
+## median
+```{r}
+median(steps_day_1$total_steps)
+```
+
+
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
